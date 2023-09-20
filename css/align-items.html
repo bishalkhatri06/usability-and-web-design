@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align items</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: rgb(30, 40, 100);
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: row-reverse; */
+            align-items: center;
+        }
+
+        .container> .left-box{
+            width: 50%;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 0 20px;
+        }
+
+        .left-box button{
+            background-color: rgb(78,23,2);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            transition: all 2s;
+        }
+
+        .left-box button:hover{
+            background: linear-gradient(to bottom left, red, green, blue);
+            cursor: pointer;
+        }
+
+        .container> .right-box{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel dicta, cupiditate voluptas eligendi, similique labore error neque deserunt iste, sint fugiat. Natus libero vitae porro facilis fugiat voluptates officiis!
+            <br>
+            <button>Learn More</button>
+        </div>
+        <div class="right-box">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/984/697/small/bird-amazonian-motmot-drawing-feather-free-png.png" alt="bird">
+        </div>
+    </div>
+</body>
+</html>

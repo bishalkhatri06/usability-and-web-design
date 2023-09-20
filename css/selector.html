@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* universal selector */
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            color: cadetblue;
+        }
+        .names{
+            color: blue;
+        }
+        #university{
+            color: blueviolet;
+            background-color: red;
+        }
+        .content{
+            color: red;
+            background-color: blue !important;
+        }
+        .test{
+            font-style: italic;
+        }
+
+        /* grouping selector */
+        h1,#university,.test{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        types of Selector
+        1) element selector - it use element tag
+        2) class selector - use class name of element with '.classname'
+        3) id selector - use id name of element with '#idname'
+        4) universal selector - it is used to apply on whole page with '*'
+        5) pseudo selector - used for inhance the property eg: ':,::'
+     -->
+
+    <h1>Tribhuvan University</h1>
+
+    <h1 class="names">Pokhara University</h1>
+    <h3 id="university">Purbanchal University</h3>
+    <h2 class="content test" id="university" >this is selector</h2>
+
+
+    
+    
+</body>
+</html>

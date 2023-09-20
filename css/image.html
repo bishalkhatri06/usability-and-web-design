@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 500px;
+            height: 300px;
+            margin: 150px auto;
+            border: 3px solid red;
+            overflow: hidden;
+        }
+        
+        .container img{
+            height: 100%;
+            width: 100%;
+            transition: ease-in-out 1s;
+        }
+
+        .container:hover img{
+            transform: scale(1.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../img/img.jpg" alt="">
+    </div>
+</body>
+</html>

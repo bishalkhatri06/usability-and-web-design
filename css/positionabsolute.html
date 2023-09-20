@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute position</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 600px;
+            margin: auto;
+            position: relative;
+        }
+
+        .container img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .container button{
+            color: #fff;
+            font-size: 40px;
+            background: none;
+            border: none;
+        }
+
+        .container .left{
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+
+        .container .right{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            
+        }
+
+        .left:hover, .right:hover{
+            background: #ffffff44;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/img/img.jpg" alt="">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+</body>
+</html>

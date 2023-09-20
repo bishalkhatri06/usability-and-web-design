@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: aquamarine;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* to place content horizontally centerd */
+            /* justify-content: center; */
+            /* to place content vertically centered */
+            /* align-items: center;  */
+            
+            /* gap: 5px; */
+        }
+        
+        .container > .box{
+            height: 250px;
+            width: 23%;
+            background-color: rgb(131, 83, 64);
+            margin: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .container> .box > .box1{
+            background-color: black;
+            width: 48%;
+            height: 90%;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

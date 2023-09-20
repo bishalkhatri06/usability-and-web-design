@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 250px;
+            width: 400px;
+            margin: 40px auto;
+            padding: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: all 1s;
+        }
+
+        .container > img{
+            height: 100%;
+            width: 100%;
+            filter: grayscale(1);
+            transition: all 0.7s;
+        }
+
+        .container:hover{
+            transform: translate(5px,5px);
+        }
+        
+        .container:hover img{
+            filter:none
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../img/img.jpg" alt="">
+    </div>
+</body>
+</html>
